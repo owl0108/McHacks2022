@@ -10,6 +10,7 @@ import history from "./history";
 import TopBar from './Components/TopBar';
 import Footer from './Components/Footer';
 import FrontPage from './Pages/FrontPage';
+import Ingredients from './Pages/Ingredients';
 import Results from './Pages/Results';
 
 export default function App({location}) {
@@ -24,7 +25,7 @@ export default function App({location}) {
 		// 	console.log("router display results " + selected);
 		// 	history.push("/recommendation");
 		// }
-    history.push("/recommendation");
+    history.push("/ingredients");
 	};
 
   // const updateSelected = (title) => {
@@ -44,9 +45,9 @@ export default function App({location}) {
       <Router history={history}>
         <Routes>
           <Route 
-            path="/recommendation" 
+            path="/ingredients" 
             location={location} 
-            element={<Results/>}
+            element={<Ingredients />}
           /> 
           <Route 
             path="/" 
@@ -57,6 +58,11 @@ export default function App({location}) {
               />
               }
           />
+          <Route 
+            path="/recommendations" 
+            location={location} 
+            element={<Results />}
+          /> 
         </Routes>
       </Router>
       </React.StrictMode>

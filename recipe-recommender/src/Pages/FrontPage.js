@@ -9,7 +9,6 @@ import Container from '@mui/material/Container';
 import {ThemeProvider } from '@mui/material/styles';
 
 import theme from "../theme";
-import history from "../history";
 
 
 const FrontPage = (props) => {
@@ -20,7 +19,7 @@ const FrontPage = (props) => {
       <main>
         <Box
           sx={{
-            pt: 8,
+            pt: 16,
             pb: 6,
           }}
         >
@@ -29,12 +28,12 @@ const FrontPage = (props) => {
               component="h1"
               variant="h2"
               align="center"
-              color="text.primary"
+              color="#FFFFFF"
               gutterBottom
             >
               Recipe Recommender
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            <Typography variant="h5" align="center" color="#FFFFFF" paragraph>
               For when you have too many or too little things in your pantry.
             </Typography>
             <Stack
@@ -44,14 +43,14 @@ const FrontPage = (props) => {
               justifyContent="center"
             >
               <Button 
-                href="/recommendation"
+                href="/ingredients"
                 variant="contained" 
-                style={{backgroundColor: "#ffb260"}}
+                style={{backgroundColor: "#ffb260", color: "#5C63AB"}}
                 onClick={props.handleOnClick} 
               >
                 Get Recipes Via Ingredients
               </Button>
-              <Button variant="outlined">Get Recipes Via Mood</Button>
+              <Button variant="outlined" style={{color: "#ffb260"}}>Get Recipes Via Mood</Button>
             </Stack>
           </Container>
         </Box>

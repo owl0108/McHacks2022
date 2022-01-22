@@ -5,15 +5,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-// import Container from "@mui/material/Container";
 
-// import Copyright from "./Copyright";
+import './styling.css';
 
 const useStyles = makeStyles((theme) => ({
 	footer: {
 		borderTop: `1px solid ${theme.palette.divider}`,
 		marginTop: theme.spacing(35),
 		marginBottom: 0,
+    bgcolor: "#636363",
 	},
 }));
 
@@ -36,7 +36,12 @@ export default function Footer() {
 		<div className="footer">
 			{/* <Container maxWidth="md" component="footer" className={classes.footer}> */}
 				{/* <Box > */}
-                <Box style={{ bgcolor: "#636363"}} component="footer">
+                <Box 
+                  // className="footer"
+                  style={{ background: '#007cc0'}}
+                  component="footer"
+                  position="static"
+                >
                     <Typography
                         variant="subtitle1"
                         align="center"
