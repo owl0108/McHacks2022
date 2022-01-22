@@ -44,7 +44,7 @@ export default function App({location}) {
       <Router history={history}>
         <Routes>
           <Route 
-            path="recommendation" 
+            path="/recommendation" 
             location={location} 
             element={<Results/>}
           /> 

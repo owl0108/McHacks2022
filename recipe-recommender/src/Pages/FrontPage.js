@@ -44,6 +44,7 @@ const FrontPage = (props) => {
               justifyContent="center"
             >
               <Button 
+                href="/recommendation"
                 variant="contained" 
                 style={{backgroundColor: "#ffb260"}}
                 onClick={props.handleOnClick} 

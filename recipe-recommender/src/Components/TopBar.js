@@ -1,5 +1,4 @@
 import React from "react";
-import history from "../history";
 
 import { AppBar } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
