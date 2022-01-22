@@ -1,5 +1,6 @@
 import React from "react";
 import {useState} from 'react';
+import {useNavigate } from "react-router-dom";
 
 // import Typography from '@mui/material/Typography';
 // import { Autocomplete } from "@material-ui/lab";
@@ -23,12 +24,20 @@ import theme from "../theme";
 // }
 
 export default function Ingredients(props) {
+    let navigate = useNavigate();
     const [textInput, setTextInput] = useState('');
 
     const handleTextInput = e => {
         setTextInput(e.target.value);
-    }
+    };
 
+    const handleKeyPress = (e) => {
+        console.log(e.key);
+        if (e.key === 'Enter') {
+          // history.push("/results");
+          navigate("/results");
+        }
+    }
 
     //this is where we put the api query!!!!!!!!
     // const keyPress = e => {
@@ -52,13 +61,12 @@ export default function Ingredients(props) {
             >
             <TextField 
                 className="search"
-                href="/results"
                 id="input" 
                 label="Input ingredients here!" 
                 variant="filled" 
                 style={{backgroundColor: "#FED9AF", color: "#5C63AB", borderRadius: 5 }}
                 onChange={(e) => handleTextInput(e)}
-                onKeyDown={(e) => props.handleKeyPress(e)}
+                onKeyDown={(e) => handleKeyPress(e)}
             />
             </Grid>
             </Container>
