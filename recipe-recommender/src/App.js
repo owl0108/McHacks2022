@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
-import { Router, Route, Routes } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import {Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
+import React, { useState, useEffect, Component} from "react";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 
@@ -11,52 +12,51 @@ import Footer from './Components/Footer';
 import FrontPage from './Pages/FrontPage';
 import Results from './Pages/Results';
 
-import './App.css';
-
-export default function App() {
-  const [selected, setSelected] = useState("");
-	const [displayError, setDisplayError] = useState(false);
+export default function App({location}) {
+  // const [selected, setSelected] = useState("");
+	// const [displayError, setDisplayError] = useState(false);
 
 	const handleOnClick = () => {
-		if (selected === "") {
-			setDisplayError(true);
-		} else {
-			setDisplayError(false);
-			console.log("router display results " + selected);
-			history.push("/recommendation");
-		}
+		// if (selected === "") {
+		// 	setDisplayError(true);
+		// } else {
+		// 	setDisplayError(false);
+		// 	console.log("router display results " + selected);
+		// 	history.push("/recommendation");
+		// }
+    history.push("/recommendation");
 	};
 
-  const updateSelected = (title) => {
-		setSelected(title);
-	};
+  // const updateSelected = (title) => {
+	// 	setSelected(title);
+	// };
 
 	const goHome = () => {
-		setSelected("");
+		// setSelected("");
 		history.push("/");
 	};
 
   return (
     <div> 
+      <React.StrictMode>
       <CssBaseline />
       <TopBar goHome={goHome}/>
       <Router history={history}>
         <Routes>
-          <Route path="recommendation">
-            <Results recipe={selected} />
+          <Route path="recommendation" location={location} element={<Results/>}> 
+            {/* <Results /> */}
           </Route>
-          <Route path="/">
-            <FrontPage
+          <Route path="/" location={location} element={<FrontPage handleOnClick={handleOnClick}/>}>
+            {/* <FrontPage
               handleOnClick={handleOnClick}
               // displayError={displayError}
               // updateSelected={updateSelected}
-            />
+            /> */}
           </Route>
         </Routes>
-
       </Router>
-      <FrontPage />
-      <h6 /> 
+      </React.StrictMode>
+      {/* <h6 />  */}
       <Footer />
     </div>
   );

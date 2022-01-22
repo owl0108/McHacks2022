@@ -11,10 +11,11 @@ import {ThemeProvider } from '@mui/material/styles';
 import theme from "../theme";
 
 
-export default function FrontPage(props) {
+const FrontPage = (props) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <React.Fragment>
       <main>
         <Box
           sx={{
@@ -43,7 +44,7 @@ export default function FrontPage(props) {
             >
               <Button 
                 variant="contained" 
-                handleonclick={props.handleOnClick} 
+                onClick={props.handleOnClick} 
                 style={{backgroundColor: "#ffb260"}}
               >
                 Get Recipes Via Ingredients
@@ -53,7 +54,10 @@ export default function FrontPage(props) {
           </Container>
         </Box>
       </main>
+      </React.Fragment>
       {/* End footer */}
     </ThemeProvider>
   );
 }
+
+export default FrontPage;
