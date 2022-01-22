@@ -28,6 +28,12 @@ export default function App({location}) {
     history.push("/ingredients");
 	};
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      history.push("/results");
+    }
+  }
+
   // const updateSelected = (title) => {
 	// 	setSelected(title);
 	// };
@@ -45,11 +51,6 @@ export default function App({location}) {
       <Router history={history}>
         <Routes>
           <Route 
-            path="/ingredients" 
-            location={location} 
-            element={<Ingredients />}
-          /> 
-          <Route 
             path="/" 
             location={location} 
             element={
@@ -59,7 +60,16 @@ export default function App({location}) {
               }
           />
           <Route 
-            path="/recommendations" 
+            path="/ingredients" 
+            location={location} 
+            element={
+              <Ingredients 
+                handleKeyPress={handleKeyPress}
+              />
+            }
+          /> 
+          <Route 
+            path="/results" 
             location={location} 
             element={<Results />}
           /> 
