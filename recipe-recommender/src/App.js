@@ -43,16 +43,20 @@ export default function App({location}) {
       <TopBar goHome={goHome}/>
       <Router history={history}>
         <Routes>
-          <Route path="recommendation" location={location} element={<Results/>}> 
-            {/* <Results /> */}
-          </Route>
-          <Route path="/" location={location} element={<FrontPage handleOnClick={handleOnClick}/>}>
-            {/* <FrontPage
-              handleOnClick={handleOnClick}
-              // displayError={displayError}
-              // updateSelected={updateSelected}
-            /> */}
-          </Route>
+          <Route 
+            path="recommendation" 
+            location={location} 
+            element={<Results/>}
+          /> 
+          <Route 
+            path="/" 
+            location={location} 
+            element={
+              <FrontPage 
+                handleOnClick={handleOnClick}
+              />
+              }
+          />
         </Routes>
       </Router>
       </React.StrictMode>

@@ -9,6 +9,7 @@ import Container from '@mui/material/Container';
 import {ThemeProvider } from '@mui/material/styles';
 
 import theme from "../theme";
+import history from "../history";
 
 
 const FrontPage = (props) => {
@@ -44,8 +45,8 @@ const FrontPage = (props) => {
             >
               <Button 
                 variant="contained" 
-                onClick={props.handleOnClick} 
                 style={{backgroundColor: "#ffb260"}}
+                onClick={props.handleOnClick} 
               >
                 Get Recipes Via Ingredients
               </Button>
