@@ -26,7 +26,7 @@ npm start
 
 Click on one of the two options to generate your recommendations!
 
-![](https://imgur.com/a/WqOVSQ0)
+![](https://imgur.com/cRXLsOv)
 
 [YouTube Demo](https://www.youtube.com/)
 
