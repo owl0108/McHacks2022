@@ -17,12 +17,16 @@ Once opening the project, run <br />
 ```
 npm install
 ```
-and run <br />
+and run 
+```
+npm
+<br />
 
 
 ## Usage
 
-![](image)
+Click on one of the two options to generate your recommendations!
+![](https://imgur.com/a/WqOVSQ0)
 ![](image)
 
 [YouTube Demo](https://www.youtube.com/)
