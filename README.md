@@ -41,7 +41,7 @@ Once the user clicks on the search button, they will be redirected to another pa
 To navigate back to the home page, users may click the "Home" button on the top right of the screen. 
 
 
-[YouTube Demo](https://www.youtube.com)
+[YouTube Demo](https://youtu.be/YqQPOzgQSIM)
 
 [Devpost Link](https://devpost.com/software/recipe-recommender-7p1n0f)
 
