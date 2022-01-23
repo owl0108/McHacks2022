@@ -3,22 +3,22 @@ import { createTheme } from "@material-ui/core/styles";
 const theme = createTheme({
 	palette: {
 		primary: {
-			light: "#f89790",
-			main: "#ffffff",
-			dark: "#f56f65", //red medium
-			contrastText: "#02365e",
+			light: "#59abf3",
+			main: "#007cc0",
+			dark: "#00508f",
+			contrastText: "#ffffff",
 		},
 		secondary: {
-			light: "#ffd081",
-			main: "#5C63AB",
-			dark: "#007CC0",
-			contrastText: "#5C63AB19",
+			light: "#ffe48f",
+			main: "#ffb260",
+			dark: "#c88232",
+			contrastText: "#000000",
 		},
 		textPrimary: {
-			main: "#4C5391",
+			// main: "#4C5391",
 		},
 		background: {
-			default: "#007cc0",
+			// default: "#007cc0",
 		},
 	},
 });
