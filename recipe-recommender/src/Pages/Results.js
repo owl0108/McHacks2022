@@ -84,6 +84,7 @@ export default function Results(props) {
   }  
 
   const matchedRecipes = recipes.map(getNumMatchedIngredients).filter(({recipe}) => (emotion === "null") ? true : recipe.emotions === emotion).filter(({numIngredientsMatched}) => numIngredientsMatched > 0)
+
   matchedRecipes.sort((entry1, entry2) => entry2.numIngredientsMatched - entry1.numIngredientsMatched)
   console.log(matchedRecipes) 
 

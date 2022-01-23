@@ -58,7 +58,7 @@ export default function Ingredients(props) {
   const [emotionData, setEmotionData] = useState({});
   const [ingredients, setIngredients] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [emotion, setEmotion] = useState("null");
+  const [emotion, setEmotion] = useState(null);
 
   useEffect(async () => {
     const ingredients = await getIngredients();
