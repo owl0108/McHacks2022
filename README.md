@@ -17,11 +17,10 @@ Once opening the project, run <br />
 ```
 npm install
 ```
-and run 
+and run <br />
 ```
-npm
-<br />
-
+npm start
+```
 
 ## Usage
 
