@@ -27,12 +27,19 @@ npm start
 
 ## Usage
 
-Click the "Get Recipes Via Ingredients" option on the home page to get started! Users will be navigated to a page where they may input ingredients, and select a mood they want to experience while cooking. Once the user clicks on the search button, they will be redirected to another page that displays all the recipes that fit their ingredients list and sentiment selection! To navigate back to the home page, users may click the "Home" button on the top right of the screen. 
+Click the "Get Recipes Via Ingredients" option on the home page to get started! 
 ![](https://i.imgur.com/dVwxf1C.jpg)
+
+Users will be navigated to a page where they may input ingredients, and select a mood they want to experience while cooking. 
 ![](https://i.imgur.com/PyJWhzX.jpg)
 ![](https://i.imgur.com/TIInclh.jpg)
+
+Once the user clicks on the search button, they will be redirected to another page that displays all the recipes that fit their ingredients list and sentiment selection! Each recipe has a "View More" button that the users may click; this opens a new tab and allows the user to view the original recipe with the full instructions.
 ![](https://i.imgur.com/iFNRs4f.jpg)
 ![](https://i.imgur.com/E8oRnrR.jpg)
+
+To navigate back to the home page, users may click the "Home" button on the top right of the screen. 
+
 
 [YouTube Demo](https://www.youtube.com)
 
