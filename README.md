@@ -29,7 +29,7 @@ npm start
 Click the "Get Recipes Via Ingredients" option on the home page to get started! 
 ![](https://i.imgur.com/dVwxf1C.jpg)
 
-Users will be navigated to a page where they may input ingredients, and select a mood they want to experience while cooking. 
+Users will be navigated to a page where they may input ingredients, and select a mood they want to experience while cooking (mood selection is optional but recommended for the extra element of fun it brings to your cooking experience!). 
 ![](https://i.imgur.com/PyJWhzX.jpg)
 ![](https://i.imgur.com/TIInclh.jpg)
 
