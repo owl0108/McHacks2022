@@ -25,8 +25,8 @@ npm start
 ## Usage
 
 Click on one of the two options to generate your recommendations!
+
 ![](https://imgur.com/a/WqOVSQ0)
-![](image)
 
 [YouTube Demo](https://www.youtube.com/)
 
